@@ -1,3 +1,102 @@
-// Place all the styles related to the simple_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/***
+General
+***/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 50px;
+}
+
+p {
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+
+h1 {
+  color: #3b945e;
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+/***
+Navigation
+***/
+
+.navbar {
+  background-color: white;
+  border-bottom: none;
+}
+
+.projectName a {
+  color: #3b945e;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2em;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #182628;
+  transition: color 300ms;
+  -webkit-transition: color 300ms;
+  font-size: 1.2em;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+  color: #57ba98;
+}
+
+.cart {
+  background-color: #57ba98;
+}
+
+.navbar-inverse .navbar-nav > .cart > a:hover {
+  color:white;
+}
+
+.glyphicon {
+  margin-right: 8px;
+}
+
+/***
+Content
+***/
+
+.product-image {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/***
+Footer
+***/
+
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 50px;
+  margin-top: 50px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px 15px 5px 15px;
+}
