@@ -16,21 +16,15 @@ font-family: 'Source Sans Pro', sans-serif;
 
 a:hover {
   text-decoration: none;
+  background-color: white;
 }
-
-h1, h2 {
-  font-family: 'Rubik', sans-serif;
-  text-align: center;
-}
-
 
 h1 {
-  color: #3b945e;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  color: #182628;
   font-size: 2em;
-}
-
-h2 {
-  font-size: 1.2em;
+  margin-top: 100px;
 }
 
 /***
@@ -95,12 +89,16 @@ Navigation
 Content
 ***/
 
-.product-image {
+.jumbotron {
+  background-color: white;
+}
+
+.jumbotron-image {
   width: 300px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: 50px;
 }
 
 /***
