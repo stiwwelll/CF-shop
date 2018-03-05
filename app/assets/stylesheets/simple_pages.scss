@@ -15,9 +15,21 @@ p {
 font-family: 'Source Sans Pro', sans-serif;
 }
 
+a {
+  color: #182628;
+}
+
+a:active {
+  color: #182628;
+}
+
+a:visited {
+  color: #182628;
+}
+
 a:hover {
   text-decoration: none;
-  background-color: white;
+  background-color: transparent;
 }
 
 h1 {
@@ -122,7 +134,7 @@ Footer
 
 footer {
   display: flex;
-  background-color: #65ccb8;
+  background-color: white;
   height: 50px;
   margin-top: 50px;
   justify-content: flex-end;
