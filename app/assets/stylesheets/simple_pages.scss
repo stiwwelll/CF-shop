@@ -8,6 +8,7 @@ General
 
 body {
   margin: 50px 0 0 0;
+  background-color: #f2f2f2;
 }
 
 p {
@@ -25,6 +26,14 @@ h1 {
   color: #182628;
   font-size: 2em;
   margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #182628;
+  font-size: 1.5em;
+
 }
 
 /***
@@ -32,7 +41,7 @@ Navigation
 ***/
 
 .navbar {
-  background-color: white;
+  background-color: #f2f2f2;
   border-bottom: none;
 }
 
@@ -101,13 +110,19 @@ Content
   margin-top: 50px;
 }
 
+.product_cell {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
 /***
 Footer
 ***/
 
 footer {
   display: flex;
-  background-color: #f2f2f2;
+  background-color: #65ccb8;
   height: 50px;
   margin-top: 50px;
   justify-content: flex-end;
