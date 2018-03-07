@@ -28,6 +28,7 @@ a:visited {
 }
 
 a:hover {
+  color: #182628;
   text-decoration: none;
   background-color: transparent;
 }
@@ -159,11 +160,24 @@ padding: 25px;
   color: #57ba98;
 }
 
+.carousel-indicators li {
+  background-color: #182628;
+}
+
+.carousel-indicators li:hover {
+  background-color: #57ba98;
+}
+
+.carousel-indicators li.active {
+  background-color: #57ba98;
+}
+
 .carousel-caption {
     position: relative;
     left: auto;
     right: auto;
     text-shadow: none;
+    margin-bottom: 10px;
 }
 
 /***
