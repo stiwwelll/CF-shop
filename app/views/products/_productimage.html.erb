@@ -1,0 +1,6 @@
+<%= if product.image_url.present?
+  image_tag(product.image_url, class: "img-responsive product_image")
+else
+  image_tag('noproductimage.png', class: "img-responsive product_image")
+end
+%>
