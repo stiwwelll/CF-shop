@@ -1,12 +1,10 @@
-<%= link_to(product) do %>
-  <div class="col-sm-6 col-md-4 col-lg-3 product_column">
-    <div class="product_cell">
-      <div class="image_container">
-        <%= render partial: "productimage", locals: {product: product} %>
-      </div>
-      <h2><%= product.name %></h2>
-      <p><%= product.description %></p>
-      <strong><%= product.price %></strong>
+<%= link_to(product, {class: "list-item"}) do %>
+
+    <div class="list-content">
+      <%= render partial: "productimage", locals: {product: product} %>
+        <h2><%= product.name %></h2>
+        <p><%= product.description %></p>
+        <strong><%= product.price %></strong>
     </div>
-  </div><!-- /col -->
+
 <% end %>

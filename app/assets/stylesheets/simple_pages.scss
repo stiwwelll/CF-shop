@@ -50,6 +50,12 @@ h2 {
 
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /***
 Navigation
 ***/
@@ -124,18 +130,50 @@ Content
   margin-top: 50px;
 }
 
-.product_cell {
-  background-color: white;
-  padding: 20px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+/* Product tiles */
+
+.list-content img {
+  align-self: center;
+
 }
 
-.image_container {
-  align-self: center;
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
+.list-item {
+  display: flex;
+  padding: 0.5em;
+	width: 100%;
+}
+
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}
+
+.list-content {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 1em;
+   width: 100%;
+}
+
+.list-content strong {
+   margin-top: auto;
+}
+
+
+/* Carousel */
 
 .carousel-inner {
   background-color: white;
