@@ -30,19 +30,21 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="/" id="home">Home</a>
+                <%= link_to "Home", root_path, id: "home" %>
               </li>
               <li>
-                <a href="/products" id="products">Products</a>
+                <%= link_to "Products", products_path, id: "products" %>
               </li>
               <li>
-                <a href="/simple_pages/about" id="about">About</a>
+                <%= link_to "About", "/simple_pages/about", id: "about" %>
               </li>
               <li>
-                <a href="/simple_pages/contact" id="contact">Contact</a>
+                <%= link_to "Contact", "/simple_pages/contact", id: "contact" %>
               </li>
               <li class="cart" id="cart">
-                <a href="/orders"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>My cart</a>
+                <%= link_to orders_path do %>
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>My Cart
+                <% end %>
               </li>
             </ul>
           </div>
