@@ -41,9 +41,17 @@
               <li>
                 <%= link_to "Contact", "/simple_pages/contact", id: "contact" %>
               </li>
+              <li>
+                <%= form_with(url: products_path, method: 'get', local: true, class: "navbar-form") do |form| %>
+                <div class="inner-addon right-addon">
+                  <%= form.text_field :q, id: 'q', class: 'q', value: params[:q], placeholder: "Search products" %>
+                  <i class="glyphicon glyphicon-search"></i>
+                </div>
+                <% end %>
+              </li>
               <li class="cart" id="cart">
                 <%= link_to orders_path do %>
-                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>My Cart
+                <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>My Cart
                 <% end %>
               </li>
             </ul>
