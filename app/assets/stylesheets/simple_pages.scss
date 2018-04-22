@@ -24,6 +24,7 @@ body {
 
 p {
 font-family: 'Source Sans Pro', sans-serif;
+font-size: 1.2em;
 }
 
 a {
@@ -158,12 +159,6 @@ Navigation
   width: 100%;
 }
 
-@media all and (min-width: 767px) {
-  .q {
-    width: 180px;
-  }
-}
-
 .inner-addon {
     position: relative;
 }
@@ -191,6 +186,11 @@ Content
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+}
+
+.success-message {
+  text-align: center;
+  color: #3b945e;
 }
 
 /* Product tiles */
