@@ -101,6 +101,10 @@ Navigation
   font-size: 1.2em;
 }
 
+.mainmenu {
+  margin-right: 85px;
+}
+
 .navbar-inverse .navbar-nav>li>a {
   color: #182628;
   transition: color 300ms;
@@ -171,6 +175,17 @@ Navigation
 }
 
 .right-addon .glyphicon { right: 0px;}
+
+.navbar .login {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+}
+@media (max-width: 767px) {
+  .navbar .login {
+    right: 75px;
+  }
+}
 
 /***
 Content
