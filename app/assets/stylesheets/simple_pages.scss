@@ -74,7 +74,8 @@ ul, li {
   border-radius: 0;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary::selection {
   background-color: #57ba98;
 }
 
@@ -328,4 +329,21 @@ footer {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+}
+
+/***
+Authentication
+***/
+
+.login-form {
+  width: 340px;
+  margin: 50px auto;
+}
+
+.remember_me {
+  font-weight: normal;
+}
+
+.alert {
+  margin: 10px;
 }

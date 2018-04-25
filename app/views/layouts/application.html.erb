@@ -13,8 +13,13 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if flash[:notice] %>
+      <div class="alert alert-success"><%= notice %></div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="alert alert-warning"><%= alert %></div>
+    <% end %>
+
     <div class="content">
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
