@@ -345,5 +345,19 @@ Authentication
 }
 
 .alert {
-  margin: 10px;
+  margin: 0px;
+}
+
+.alert-success {
+  background-color: #3b945e;
+  color: white;
+  border-radius: 0px;
+  border: none;
+}
+
+.alert-warning {
+  background-color: #af2141;
+  border-radius: 0px;
+  color: white;
+  border: none;
 }
