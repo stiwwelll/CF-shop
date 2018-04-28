@@ -380,6 +380,23 @@ Authentication
   font-weight: normal;
 }
 
+.alert {
+  margin: 0px;
+}
+
+.alert-success {
+  background-color: #3b945e;
+  color: white;
+  border-radius: 0px;
+  border: none;
+}
+
+.alert-warning {
+  background-color: #af2141;
+  border-radius: 0px;
+  color: white;
+  border: none;
+}
 
 /***
 Product Details
@@ -395,4 +412,4 @@ Product Details
   width: 100%;
   align-items: center;
   flex-direction: column;
-}
+  }
