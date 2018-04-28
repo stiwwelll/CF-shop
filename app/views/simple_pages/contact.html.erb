@@ -1,7 +1,5 @@
-<h1>Contact</h1>
-
 <div class="container">
-  <%= flash[:notice] %>
+  <h1>Contact</h1>
   <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
   <div class="form-group">
     <%= form.label :name %>
