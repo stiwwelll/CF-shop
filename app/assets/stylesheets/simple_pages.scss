@@ -68,8 +68,6 @@ h2 {
   }
 }
 
-
-
 h3 {
   font-family: 'Rubik', sans-serif;
   color: #182628;
@@ -379,6 +377,21 @@ Authentication
 .remember_me {
   font-weight: normal;
 }
+
+/***
+Product Details
+***/
+
+.product_detail {
+  margin-bottom: 25px;
+}
+
+.product_detail_imagebox {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
 
 .alert {
   margin: 0px;
