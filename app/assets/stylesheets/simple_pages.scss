@@ -25,10 +25,12 @@ body {
 p {
 font-family: 'Source Sans Pro', sans-serif;
 font-size: 1.2em;
+color: #182628;
 }
 
 a {
   color: #182628;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a:active {
@@ -40,7 +42,7 @@ a:visited {
 }
 
 a:hover {
-  color: #182628;
+  color: #57ba98;
   text-decoration: none;
   background-color: transparent;
 }
@@ -71,8 +73,16 @@ h2 {
 
 h3{
   font-family: 'Rubik', sans-serif;
+  color: #3b945e;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+h4{
+  font-family: 'Rubik', sans-serif;
   color: #182628;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin-bottom: 10px;
   margin-top: 0px;
 }
@@ -90,7 +100,10 @@ ul, li {
 }
 
 .btn-primary:hover,
-.btn-primary::selection {
+.btn-primary:focus,
+.btn-primary:focus-within,
+.btn-primary:visited,
+.btn-primary:active {
   background-color: #57ba98;
 }
 
@@ -118,6 +131,11 @@ ul, li {
   border-radius: 0px;
   color: white;
   border: none;
+}
+
+label {
+  font-weight:normal;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /***
@@ -283,6 +301,23 @@ Content
 
 .list-content strong {
    margin-top: auto;
+   color: #182628;
+}
+
+.list-content strong:hover {
+   color: #182628;
+}
+
+.list-content p:hover {
+  color: #182628;
+}
+
+.product_image {
+  margin-bottom: 25px;
+}
+
+.back_link a:hover {
+  color: #57ba98;
 }
 
 .product_link {
@@ -298,11 +333,6 @@ Content
   color: #57ba98;
 }
 
-.product_link {
-  text-align: center;
-  margin-top: 50px;
-}
-
 .back_link {
   margin-top: 50px;
   margin-bottom: 25px;
@@ -310,14 +340,6 @@ Content
 
 .back_link a {
   color: #3b945e;
-}
-
-.back_link a:hover {
-  color: #57ba98;
-}
-
-.product_image {
-  margin-bottom: 25px;
 }
 
 /* Carousel */
@@ -401,8 +423,8 @@ Authentication
 }
 
 /***
-+Product Details
-+***/
+Product Details
+***/
 
 .product_detail {
   margin-bottom: 25px;
@@ -415,3 +437,19 @@ Authentication
   align-items: center;
   flex-direction: column;
   }
+
+/***
+Comments
+***/
+
+.rating, .rated {
+  margin-bottom: 10px;
+}
+
+.comment {
+  margin-top: 25px;
+}
+
+.comment-control {
+  resize: none;
+}
