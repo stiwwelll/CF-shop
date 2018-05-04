@@ -453,3 +453,29 @@ Comments
 .comment-control {
   resize: none;
 }
+
+.pagination {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: white;
+  cursor: default;
+  /* self-clearing method: */ }
+  .pagination a, .pagination span, .pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 3px; }
+  .pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; }
+  .pagination .current {
+    font-style: normal;
+    background: #3b945e;
+    color: white;
+    border: 1px solid #3b945e; }
+  .pagination a {
+    text-decoration: none;
+    color: #3b945e;
+    border: 1px solid #3b945e; }
+    .pagination a:hover, .pagination a:focus {
+      color: #57ba98;
+      border-color: #57ba98; }
