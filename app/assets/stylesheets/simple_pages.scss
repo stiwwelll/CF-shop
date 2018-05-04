@@ -118,8 +118,14 @@ a:hover {
 .btn-primary:focus,
 .btn-primary:focus-within,
 .btn-primary:visited,
-.btn-primary:active {
+.btn-primary:active
+.btn-primary:active:focus {
   background-color: #57ba98;
+  box-shadow: none;
+}
+.btn:active:focus {
+  background-color: #57ba98;
+  box-shadow: none;
 }
 
 /***
@@ -461,6 +467,45 @@ label {
 
 .remember_me {
   font-weight: normal;
+}
+
+#error_explanation {
+  border: none;
+  background-color: #af2141;
+  padding: 20px;
+  width: auto;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#error_explanation ul li {
+    font-size: 0.9em;
+    list-style: none;
+    color: white;
+}
+
+.field_with_errors {
+  background-color: transparent;
+}
+
+.field_with_errors label{
+  color: #af2141;
+}
+
+.field_with_errors .form-control{
+  border-color: #af2141;
+  border-width: 2px;
+  width: 100%;
 }
 
 /***
