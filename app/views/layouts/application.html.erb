@@ -36,16 +36,16 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right mainmenu">
-              <li>
+              <li class="<%= 'active' if current_page?(root_path) %>">
                 <%= link_to "Home", root_path, id: "home" %>
               </li>
-              <li>
+              <li class="<%= 'active' if current_page?(products_path) %>">
                 <%= link_to "Products", products_path, id: "products" %>
               </li>
-              <li>
+              <li class="<%= 'active' if current_page?(simple_pages_about_path) %>">
                 <%= link_to "About", simple_pages_about_path, id: "about" %>
               </li>
-              <li>
+              <li class="<%= 'active' if current_page?(simple_pages_contact_path) %>">
                 <%= link_to "Contact", simple_pages_contact_path, id: "contact" %>
               </li>
               <li>
