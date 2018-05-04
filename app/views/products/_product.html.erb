@@ -1,7 +1,7 @@
 <%= link_to(product, {class: "list-item"}) do %>
 
     <div class="list-content">
-      <%= render partial: "productimage", locals: {product: product} %>
+      <%= render partial: "products/productimage", locals: {product: product} %>
         <h2><%= product.name %></h2>
         <p><%= product.description %></p>
         <strong><%= product.price %>€</strong>

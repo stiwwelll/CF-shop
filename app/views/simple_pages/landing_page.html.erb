@@ -29,6 +29,8 @@
   </a>
 </div>
 
-<h2>Featured Product:</h2>
-<%= @featured_product.name %>
-<%= params[:example_key].to_i * 10 %>
+<div class="container">
+<h3 class="headline_landingpage">Featured Product</h3>
+<div class="list">
+<%= render partial: 'products/product', locals: { product: @featured_product } %>
+</div>

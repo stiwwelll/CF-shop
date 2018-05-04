@@ -22,11 +22,59 @@ body {
   flex: 1 0 auto;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/***
+Typography
+***/
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  color: #182628;
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #182628;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  }
+
+h3{
+  font-family: 'Rubik', sans-serif;
+  color: #3b945e;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+h4{
+  font-family: 'Rubik', sans-serif;
+  color: #182628;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
 p {
 font-family: 'Source Sans Pro', sans-serif;
 font-size: 1.2em;
 color: #182628;
 }
+
+/***
+Buttons and links
+***/
 
 a {
   color: #182628;
@@ -47,50 +95,17 @@ a:hover {
   background-color: transparent;
 }
 
-h1 {
-  font-family: 'Rubik', sans-serif;
-  text-align: center;
-  color: #182628;
-  font-size: 2em;
+.back_link {
   margin-top: 50px;
   margin-bottom: 25px;
 }
 
-h2 {
-  font-family: 'Rubik', sans-serif;
-  color: #182628;
-  font-size: 1.5em;
-  margin-bottom: 0px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  }
-
-  @media (min-width: 992px) {
-   h2 {
-     margin-top: 0px;
-   }
-  }
-
-h3{
-  font-family: 'Rubik', sans-serif;
+.back_link a {
   color: #3b945e;
-  font-size: 1.3em;
-  margin-bottom: 10px;
-  margin-top: 0px;
 }
 
-h4{
-  font-family: 'Rubik', sans-serif;
-  color: #182628;
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  margin-top: 0px;
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.back_link a:hover {
+  color: #57ba98;
 }
 
 .btn-primary {
@@ -107,37 +122,6 @@ ul, li {
   background-color: #57ba98;
 }
 
-.form-control {
-  border-radius: 0;
-}
-
-#product_description {
-  height: 150px;
-}
-
-.alert {
-  margin: 0px;
-}
-
-.alert-success {
-  background-color: #3b945e;
-  color: white;
-  border-radius: 0px;
-  border: none;
-}
-
-.alert-warning {
-  background-color: #af2141;
-  border-radius: 0px;
-  color: white;
-  border: none;
-}
-
-label {
-  font-weight:normal;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 /***
 Navigation
 ***/
@@ -150,18 +134,14 @@ Navigation
 .projectName a {
   color: #3b945e;
   font-family: 'Rubik', sans-serif;
-  font-size: 1.2em;
-}
-
-.mainmenu {
-  margin-right: 85px;
+  font-size: 1.1em;
 }
 
 .navbar-inverse .navbar-nav>li>a {
   color: #182628;
   transition: color 300ms;
   -webkit-transition: color 300ms;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: 'Rubik', sans-serif;
 }
 
@@ -190,18 +170,6 @@ Navigation
     background-color: #182628;
 }
 
-.cart {
-  background-color: #57ba98;
-}
-
-.navbar-inverse .navbar-nav > .cart > a:hover {
-  color:white;
-}
-
-.glyphicon {
-  margin-right: 8px;
-}
-
 .navbar-form {
   margin: 0;
   padding: 0;
@@ -220,6 +188,18 @@ Navigation
     position: relative;
 }
 
+.cart {
+  background-color: #57ba98;
+}
+
+.navbar-inverse .navbar-nav > .cart > a:hover {
+  color:white;
+}
+
+.glyphicon {
+  margin-right: 8px;
+}
+
 .inner-addon .glyphicon {
   position: absolute;
   pointer-events: none;
@@ -230,19 +210,26 @@ Navigation
 .right-addon .glyphicon { right: 0px;}
 
 .navbar .login {
-  position: absolute;
-  top: 0px;
-  right: 15px;
-}
-
-@media (max-width: 767px) {
-  .navbar .login {
-    right: 75px;
-  }
+  font-size: 0.8em;
 }
 
 /***
-Content
+Footer
+***/
+
+footer {
+  flex-shrink: 0;
+  background-color: white;
+  height: 50px;
+  margin-top: 50px;
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/***
+Homepage
 ***/
 
 .jumbotron {
@@ -256,94 +243,6 @@ Content
   margin-right: auto;
   margin-top: 50px;
 }
-
-.success-message {
-  text-align: center;
-  color: #3b945e;
-}
-
-/* Product tiles */
-
-.list-content img {
-  align-self: center;
-}
-
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.list-item {
-  display: flex;
-  padding: 0.5em;
-	width: 100%;
-}
-
-@media all and (min-width: 40em) {
-  .list-item {
-    width: 50%;
-  }
-}
-
-@media all and (min-width: 60em) {
-  .list-item {
-    width: 33.33%;
-  }
-}
-
-.list-content {
-   display: flex;
-   flex-direction: column;
-   background-color: #fff;
-   padding: 1em;
-   width: 100%;
-}
-
-.list-content strong {
-   margin-top: auto;
-   color: #182628;
-}
-
-.list-content strong:hover {
-   color: #182628;
-}
-
-.list-content p:hover {
-  color: #182628;
-}
-
-.product_image {
-  margin-bottom: 25px;
-}
-
-.back_link a:hover {
-  color: #57ba98;
-}
-
-.product_link {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.product_link a {
-  color: #3b945e;
-}
-
-.product_link a:hover {
-  color: #57ba98;
-}
-
-.back_link {
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-
-.back_link a {
-  color: #3b945e;
-}
-
-/* Carousel */
 
 .carousel-inner {
   background-color: white;
@@ -395,36 +294,70 @@ padding: 25px;
     margin-bottom: 10px;
 }
 
+.headline_landingpage {
+  margin-top: 25px;
+}
+
 /***
-Footer
+Product overview
 ***/
 
-footer {
-  flex-shrink: 0;
-  background-color: white;
-  height: 50px;
-  margin-top: 50px;
-  padding: 5px 15px 5px 15px;
+.list {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  padding: 0.5em;
+	width: 100%;
+}
+
+.list-content img {
+  align-self: center;
+}
+
+.list-content {
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   padding: 1em;
+   width: 100%;
+}
+
+.list-content strong {
+   margin-top: auto;
+   color: #182628;
+}
+
+.list-content strong:hover {
+   color: #182628;
+}
+
+.list-content p:hover {
+  color: #182628;
+}
+
+.product_image {
+  margin-bottom: 25px;
+}
+
+.product_link {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.product_link a {
+  color: #3b945e;
+}
+
+.product_link a:hover {
+  color: #57ba98;
 }
 
 /***
-Authentication
-***/
-
-.login-form {
-  width: 340px;
-  margin: 50px auto;
-}
-
-.remember_me {
-  font-weight: normal;
-}
-
-/***
-Product Details
+Product details
 ***/
 
 .product_detail {
@@ -437,6 +370,10 @@ Product Details
   width: 100%;
   align-items: center;
   flex-direction: column;
+  }
+
+  #product_description {
+    height: 150px;
   }
 
 /***
@@ -459,24 +396,109 @@ Comments
   font-family: 'Source Sans Pro', sans-serif;
   background: white;
   cursor: default;
-  /* self-clearing method: */ }
-  .pagination a, .pagination span, .pagination em {
-    padding: 0.2em 0.5em;
-    display: block;
-    float: left;
-    margin-right: 3px; }
-  .pagination .disabled {
-    color: #999999;
-    border: 1px solid #dddddd; }
-  .pagination .current {
-    font-style: normal;
-    background: #3b945e;
-    color: white;
-    border: 1px solid #3b945e; }
-  .pagination a {
-    text-decoration: none;
-    color: #3b945e;
-    border: 1px solid #3b945e; }
-    .pagination a:hover, .pagination a:focus {
-      color: #57ba98;
-      border-color: #57ba98; }
+}
+
+.pagination a, .pagination span, .pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 3px; }
+
+.pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd; }
+
+.pagination .current {
+  font-style: normal;
+  background: #3b945e;
+  color: white;
+  border: 1px solid #3b945e; }
+
+.pagination a {
+  text-decoration: none;
+  color: #3b945e;
+  border: 1px solid #3b945e; }
+
+.pagination a:hover, .pagination a:focus {
+  color: #57ba98;
+  border-color: #57ba98; }
+
+/***
+Forms
+***/
+
+label {
+  font-weight:normal;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.alert {
+  margin: 0px;
+}
+
+.alert-success {
+  background-color: #3b945e;
+  color: white;
+  border-radius: 0px;
+  border: none;
+}
+
+.alert-warning {
+  background-color: #af2141;
+  border-radius: 0px;
+  color: white;
+  border: none;
+}
+
+.login-form {
+  width: 340px;
+  margin: 50px auto;
+}
+
+.remember_me {
+  font-weight: normal;
+}
+
+/***
+Media queries
+***/
+
+@media (min-width: 992px) {
+ h2 {
+   margin-top: 0px;
+ }
+
+ .projectName a {
+   font-size: 1.2em;
+ }
+
+ .navbar-inverse .navbar-nav>li>a {
+   font-size: 1.2em;
+ }
+
+ .navbar .login {
+   font-size: 0.9em;
+ }
+}
+
+@media (max-width: 767px) {
+  .navbar .login {
+
+  }
+}
+
+@media all and (min-width: 40em) {
+  .list-item {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 60em) {
+  .list-item {
+    width: 33.33%;
+  }
+}

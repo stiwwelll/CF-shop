@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right mainmenu">
+            <ul class="nav navbar-nav navbar-right">
               <li class="<%= 'active' if current_page?(root_path) %>">
                 <%= link_to "Home", root_path, id: "home" %>
               </li>
@@ -61,9 +61,7 @@
                 <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>My Cart
                 <% end %>
               </li>
-            </ul>
-            <ul class="nav navbar-nav login">
-              <li>
+              <li class="login">
                 <% if user_signed_in? %>
                 <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
                 <% else %>
