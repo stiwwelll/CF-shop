@@ -1,8 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-1">
-    </div>
-    <div class="col-md-10">
+    <div class="col-md-10 col-md-offset-1">
       <div class="back_link">
         <%= link_to 'Back to product overview', products_path %>
       </div>
@@ -36,20 +34,14 @@
         <%= @product.price %>€
       </strong>
     </div>
-    <div class="col-md-1">
-    </div>
   </div>
 
   <div class="row">
-    <div class="col-md-1">
-    </div>
-    <div class="col-md-10">
+    <div class="col-md-10 col-md-offset-1">
       <h3>User Reviews</h3>
         <%= render 'new_comment' %>
         <%= render 'comments' %>
         <%= will_paginate @comments %>
-    </div>
-    <div class="col-md-1">
     </div>
   </div>
 </div>

@@ -1,3 +1,4 @@
+<% if (Product.count >= 1) %>
 <div id="carousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -17,6 +18,7 @@
         </div>
       <% end %>
     </div>
+  <% end %>
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
@@ -29,8 +31,10 @@
   </a>
 </div>
 
+<% if @featured_product %>
 <div class="container">
-<h3 class="headline_landingpage">Featured Product</h3>
-<div class="list">
-<%= render partial: 'products/product', locals: { product: @featured_product } %>
-</div>
+  <h3 class="headline_landingpage">Featured Product</h3>
+  <div class="list">
+    <%= render partial: 'products/product', locals: { product: @featured_product } %>
+  </div>
+<% end %>

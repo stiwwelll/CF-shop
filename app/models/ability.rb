@@ -6,6 +6,7 @@ class Ability
     can :manage, User, id: user.id
     if user.admin?  # additional permissions for administrators
       can :destroy, Comment
+      can :manage, User
     end
   end
 
