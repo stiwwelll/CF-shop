@@ -21,5 +21,9 @@ describe Product do
     expect(Product.new(description: "Nice bike")).not_to be_valid
     end
 
+    it "is valid with a name" do
+    expect(Product.new(name: "race bike")).to be_valid
+    end
+
   end
 end
