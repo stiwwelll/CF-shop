@@ -4,7 +4,7 @@
       <%= render partial: "products/productimage", locals: {product: product} %>
         <h2><%= product.name %></h2>
         <p><%= product.description %></p>
-        <strong><%= product.price %>€</strong>
+        <strong><%= number_to_currency(product.price, unit: "€", separator: ",", delimiter: "", format: "%n %u") %></strong>
     </div>
 
 <% end %>

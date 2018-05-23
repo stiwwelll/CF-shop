@@ -3,5 +3,9 @@
   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
   data-name="<%= @product.name %>"
   data-description="<%= @product.description %>"
-  data-amount="<%= @product.price %>*100">
+  data-amount="<%= number_to_currency(@product.price * 100, unit: "€", separator: ",", delimiter: "", format: "%n %u") %>"
+  data-currency=eur
+  data-locale=de
+  data-panel-label="{amount} zahlen"
+  data-label="Mit Karte bezahlen">
 </script>
