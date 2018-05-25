@@ -34,9 +34,15 @@
         <%= number_to_currency(@product.price, unit: "€", separator: ",", delimiter: "", format: "%n %u") %>
       </strong>
 
+      <% if signed_in? %>
       <%= form_with(url: '/payments/create') do |form| %>
         <%= hidden_field_tag(:product_id, @product.id) %>
         <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
+      <% else %>
+        <div class = "login_to_buy">
+        <%= button_to('Jetzt einloggen um einzukaufen', new_user_session_path, method: :get, class: "btn-primary") %>
+        </div>
       <% end %>
 
     </div>
