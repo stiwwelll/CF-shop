@@ -28,7 +28,7 @@
         <%= @product.colour %>
       </p>
 
-      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>" id="average-rating"></div> </p>
 
       <strong>
         <%= number_to_currency(@product.price, unit: "€", separator: ",", delimiter: "", format: "%n %u") %>
