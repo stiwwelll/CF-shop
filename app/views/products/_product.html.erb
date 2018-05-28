@@ -1,10 +1,10 @@
-<%= link_to(product, {class: "list-item"}) do %>
-
+<% cache product do %>
+  <%= link_to(product, {class: "list-item"}) do %>
     <div class="list-content">
       <%= render partial: "products/productimage", locals: {product: product} %>
       <h2><%= product.name %></h2>
       <p><%= product.description %></p>
       <strong><%= number_to_currency(product.price, unit: "€", separator: ",", delimiter: "", format: "%n %u") %></strong>
     </div>
-
+  <% end %>
 <% end %>

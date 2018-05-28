@@ -72,3 +72,5 @@ gem 'rails-controller-testing'
 gem 'stripe'
 
 gem 'rails-html-sanitizer'
+
+gem 'dalli'
