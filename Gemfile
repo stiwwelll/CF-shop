@@ -76,3 +76,5 @@ gem 'rails-html-sanitizer'
 gem 'dalli'
 
 gem 'memcachier'
+
+gem 'redis-rails'
