@@ -8,8 +8,8 @@
     <div class="col-md-1">
     </div>
   </div>
-  <% cache @product do %>
   <div class="row product_detail" data-product-id="<%= @product.id %>">
+    <% cache @product do %>
     <div class="col-md-1">
     </div>
     <div class="col-md-5">
@@ -34,6 +34,7 @@
       <strong>
         <%= number_to_currency(@product.price, unit: "€", separator: ",", delimiter: "", format: "%n %u") %>
       </strong>
+      <% end %>
 
       <% if signed_in? %>
       <%= form_with(url: '/payments/create') do |form| %>
@@ -48,7 +49,7 @@
 
     </div>
   </div>
-  <% end %>
+
 
   <div class="row">
     <div class="col-md-10 col-md-offset-1">

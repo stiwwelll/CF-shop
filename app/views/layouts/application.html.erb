@@ -7,11 +7,32 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Rubik|Source+Sans+Pro" rel="stylesheet">
 
-    <script type="text/javascript" id="cookiebanner"
-    src="https://cdn.jsdelivr.net/gh/dobarkod/cookie-banner@1.2.2/dist/cookiebanner.min.js"
-    data-height="20px" data-position="top"
-    data-message="We use cookies to improve your browsing experience.">
-    </script>
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#118cff",
+      "text": "#ffffff",
+
+    },
+    "button": {
+      "background": "#ffffff",
+      "text": "#118cff"
+    }
+  },
+  "type": "opt-out",
+  "content": {
+    "message": "This website uses cookies to improve your experience by tracking your usage of the website. By opting in you agree to our",
+    "dismiss": "Agree",
+    "deny": "Disagree",
+    "link": "protection policy.",
+    "href": "https://www.netzwerk-chancen.de/datenschutz"
+  }
+})});
+</script>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
