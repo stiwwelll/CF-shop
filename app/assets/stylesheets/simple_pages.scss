@@ -582,13 +582,18 @@ Cookie Banner
   font-family: 'Raleway', sans-serif;
   font-size: 16px; /* by setting the base font here, we can size the rest of the popup using CSS `em` */
   line-height: 1.5em;
+  background-color: #118cff;
+  color: white;
 }
 
 .cc-link {
   font-family: 'Raleway', sans-serif;
+  color: white;
   opacity: 100;
 }
 
 .cc-btn {
   font-family: 'Raleway', sans-serif;
+  background-color: white;
+  color: #118cff;
 }
