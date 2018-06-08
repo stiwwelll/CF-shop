@@ -573,3 +573,22 @@ Media queries
     width: 33.33%;
   }
 }
+
+/***
+Cookie Banner
+***/
+
+.cc-window, .cc-revoke {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px; /* by setting the base font here, we can size the rest of the popup using CSS `em` */
+  line-height: 1.5em;
+}
+
+.cc-link {
+  font-family: 'Raleway', sans-serif;
+  opacity: 100;
+}
+
+.cc-btn {
+  font-family: 'Raleway', sans-serif;
+}

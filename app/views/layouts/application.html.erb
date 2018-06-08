@@ -4,35 +4,36 @@
     <title>Bike Berlin</title>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://fonts.googleapis.com/css?family=Rubik|Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#118cff",
-      "text": "#ffffff",
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function(){
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#118cff",
+            "text": "#ffffff",
 
-    },
-    "button": {
-      "background": "#ffffff",
-      "text": "#118cff"
-    }
-  },
-  "type": "opt-out",
-  "content": {
-    "message": "This website uses cookies to improve your experience by tracking your usage of the website. By opting in you agree to our",
-    "dismiss": "Agree",
-    "deny": "Disagree",
-    "link": "protection policy.",
-    "href": "https://www.netzwerk-chancen.de/datenschutz"
-  }
-})});
-</script>
+          },
+          "button": {
+            "background": "#ffffff",
+            "text": "#118cff"
+          }
+        },
+        "type": "opt-out",
+        "content": {
+          "message": "Wir verwenden Cookies, um Ihnen mehr Benutzerfreundlichkeit bieten zu können. Wenn Sie Zustimmen, akzeptieren Sie unsere Datenschutzerklärung.",
+          "dismiss": "ZUSTIMMEN",
+          "deny": "ABLEHNEN",
+          "link": "Mehr Informationen",
+          "href": "https://www.netzwerk-chancen.de/datenschutz",
+        }
+      })});
+    </script>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
