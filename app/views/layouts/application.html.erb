@@ -9,63 +9,91 @@
 
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
       window.addEventListener("load", function(){
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#118cff",
-            "text": "#ffffff",
 
-          },
-          "button": {
-            "background": "#ffffff",
-            "text": "#118cff"
-          }
-        },
-        "type": "opt-in",
-        "content": {
-          "message": "Wir verwenden Cookies, um Ihnen mehr Benutzerfreundlichkeit bieten zu können. Wenn Sie Zustimmen, akzeptieren Sie unsere Datenschutzerklärung.",
-          "dismiss": "ABLEHNEN",
-          "allow": "ZUSTIMMEN",
-          "link": "Mehr Informationen",
-          "href": "https://www.netzwerk-chancen.de/datenschutz",
+        function createCookie(name, value, days) {
+          if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+              var expires = "; expires=" + date.toGMTString();
+            }
+            else var expires = "";
+
+            document.cookie = name + "=" + value + expires + "; path=/";
         }
-      })});
-    </script>
-    <script>
-    onInitialise: function (status) {
-      var type = this.options.type;
-      var didConsent = this.hasConsented();
-      if (type == 'opt-in' && didConsent) {
-        // enable cookies
-      }
-      if (type == 'opt-out' && !didConsent) {
-        // disable cookies
-      }
-    },
 
-    onStatusChange: function(status, chosenBefore) {
-      var type = this.options.type;
-      var didConsent = this.hasConsented();
-      if (type == 'opt-in' && didConsent) {
-        // enable cookies
-      }
-      if (type == 'opt-out' && !didConsent) {
-        // disable cookies
-      }
-    },
+        function readCookie(name) {
+          var nameEQ = name + "=";
+          var ca = document.cookie.split(';');
+          for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+          }
+          return null;
+        }
 
-    onRevokeChoice: function() {
-      var type = this.options.type;
-      if (type == 'opt-in') {
-        // disable cookies
-      }
-      if (type == 'opt-out') {
-        // enable cookies
-      }
-    },
+        function eraseCookie(name) {
+          createCookie(name, "", -1);
+        }
+
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#118cff",
+              "text": "#ffffff",
+
+            },
+            "button": {
+              "background": "#ffffff",
+              "text": "#118cff"
+            }
+          },
+          "type": "opt-in",
+          "content": {
+            "message": "Wir verwenden Cookies, um Ihnen mehr Benutzerfreundlichkeit bieten zu können. Wenn Sie Zustimmen, akzeptieren Sie unsere Datenschutzerklärung.",
+            "allow": "Zustimmen",
+            "dismiss": "ABLEHNEN",
+            "link": "Mehr Informationen",
+            "href": "https://www.netzwerk-chancen.de/datenschutz",
+          },
+          onInitialise: function (status) {
+            var didConsent = this.hasConsented();
+            if (status == 'dismiss' || !didConsent) {
+
+              console.log('test');
+
+              /* CF-Shop Cookie */
+              eraseCookie('_nameofapp_session');
+
+              /* Netzwerk Chancen Cookies
+              eraseCookie('XSRF-TOKEN');
+              eraseCookie('hs');
+              eraseCookie('svSession');
+              eraseCookie('incap_ses_${Proxy-ID}_${Site-ID}	');
+              eraseCookie('incap_visid_${Proxy-ID}_${Site-ID}	');
+              eraseCookie('nlbi_{ID}	');
+              eraseCookie('smSession');
+              eraseCookie('TS015217d5');
+              eraseCookie('TS01ffac9c');
+              eraseCookie('__utma');
+              eraseCookie('__utmc');
+              eraseCookie('__utmz');
+              eraseCookie('_ga');
+              eraseCookie('_wixCIDX');
+              eraseCookie('_wixUIDX');
+              eraseCookie('_wix_broser_sess');
+              */
+            }
+            else {
+
+            }
+          },
+        })
+      });
     </script>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -118,9 +146,9 @@
                 <% end %>
               </li>
               <li class="cart" id="cart">
-                <%= link_to orders_path do %>
+                <a>
                 <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>My Cart
-                <% end %>
+              </a>
               </li>
               <li class="login">
                 <% if user_signed_in? %>
