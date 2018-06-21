@@ -16,6 +16,22 @@ describe Product do
       expect(@product.average_rating).to eq 3.0
     end
 
+    it "returns the highest rating of all comments" do
+      expect(@product.highest_rating_comment.rating).to eq 5
+    end
+
+    it "returns the lowest rating of all comments" do
+      expect(@product.lowest_rating_comment.rating).to eq 1
+    end
+
+  end
+
+  context "when product has no name" do
+
+    before do
+      @product = FactoryBot.create(:product)
+    end
+
     it "is not valid without a name" do
     expect(Product.new(description: "Nice bike")).not_to be_valid
     end
@@ -25,4 +41,9 @@ describe Product do
     end
 
   end
+
+  context "when user searches" do
+    #tbd
+  end
+
 end
