@@ -1,0 +1,831 @@
+/* line 1, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 35, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/***
+General
+***/
+/* line 6, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+html {
+  height: 100%;
+}
+
+/* line 14, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+body {
+  margin: 50px 0 0 0;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50px);
+}
+
+/* line 22, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.content {
+  flex: 1 0 auto;
+}
+
+/* line 26, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/***
+Typography
+***/
+/* line 36, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  color: #182628;
+  font-size: 2em;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+/* line 45, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  font-family: 'Rubik', sans-serif;
+  color: #182628;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* line 54, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+h3 {
+  font-family: 'Rubik', sans-serif;
+  color: #3b945e;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+/* line 62, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+h4 {
+  font-family: 'Rubik', sans-serif;
+  color: #182628;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+/* line 70, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+  color: #182628;
+}
+
+/***
+Buttons and links
+***/
+/* line 80, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+a {
+  color: #182628;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 85, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+a:active {
+  color: #182628;
+}
+
+/* line 89, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+a:visited {
+  color: #182628;
+}
+
+/* line 93, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+a:hover {
+  color: #57ba98;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 99, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.back_link {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+/* line 104, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.back_link a {
+  color: #3b945e;
+}
+
+/* line 108, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.back_link a:hover {
+  color: #57ba98;
+}
+
+/* line 112, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.btn-primary {
+  background-color: #3b945e;
+  border: none;
+  border-radius: 0;
+}
+
+/* line 118, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.stripe-button-el {
+  background-color: #3b945e;
+  border: none;
+  margin-top: 10px;
+}
+
+/* line 124, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:focus-within,
+.btn-primary:visited,
+.btn-primary:active
+.btn-primary:active:focus {
+  background-color: #57ba98;
+  box-shadow: none;
+}
+
+/* line 133, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.btn:active:focus {
+  background-color: #57ba98;
+  box-shadow: none;
+}
+
+/***
+Navigation
+***/
+/* line 142, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar {
+  background-color: #f2f2f2;
+  border-bottom: none;
+}
+
+/* line 147, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.projectName a {
+  color: #3b945e;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.1em;
+}
+
+/* line 153, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #182628;
+  transition: color 300ms;
+  -webkit-transition: color 300ms;
+  font-size: 1.1em;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* line 161, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  color: #57ba98;
+  background-color: #f2f2f2;
+}
+
+/* line 170, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle {
+  background-color: #fff;
+  border: none;
+}
+
+/* line 175, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #fff;
+  border: none;
+}
+
+/* line 182, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #182628;
+}
+
+/* line 186, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar-form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 191, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.q {
+  height: 50px;
+  border: none;
+  padding: 10px;
+  font-size: 1em;
+  font-family: 'Rubik', sans-serif;
+  width: 100%;
+}
+
+/* line 200, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.inner-addon {
+  position: relative;
+}
+
+/* line 204, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.cart {
+  background-color: #57ba98;
+}
+
+/* line 208, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar-inverse .navbar-nav > .cart > a:hover {
+  color: white;
+  background-color: #57ba98;
+}
+
+/* line 213, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.glyphicon {
+  margin-right: 8px;
+}
+
+/* line 217, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.inner-addon .glyphicon {
+  position: absolute;
+  pointer-events: none;
+  margin-top: 18px;
+  padding-right: 10px;
+}
+
+/* line 224, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.right-addon .glyphicon {
+  right: 0px;
+}
+
+/* line 226, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.navbar .login {
+  font-size: 0.8em;
+}
+
+/***
+Footer
+***/
+/* line 234, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+footer {
+  flex-shrink: 0;
+  background-color: white;
+  height: 50px;
+  margin-top: 50px;
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/***
+Homepage
+***/
+/* line 249, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.jumbotron {
+  background-color: white;
+}
+
+/* line 253, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.jumbotron-image {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+/* line 261, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-inner {
+  background-color: white;
+}
+
+/* line 265, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-inner > .item > img {
+  margin: auto;
+  padding: 25px;
+  max-height: 250px;
+}
+
+/* line 271, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-control.left,
+.carousel-control.right {
+  background: none;
+  opacity: 1;
+}
+
+/* line 277, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-control.left:hover,
+.carousel-control.right:hover {
+  background: none;
+  opacity: 1;
+}
+
+/* line 283, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-control .glyphicon {
+  color: #182628;
+  opacity: 1;
+}
+
+/* line 288, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-control .glyphicon:hover {
+  color: #57ba98;
+}
+
+/* line 292, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators li {
+  background-color: #182628;
+}
+
+/* line 296, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators li:hover {
+  background-color: #57ba98;
+}
+
+/* line 300, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-indicators li.active {
+  background-color: #57ba98;
+}
+
+/* line 304, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  text-shadow: none;
+  margin-bottom: 10px;
+}
+
+/* line 312, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.headline_landingpage {
+  margin-top: 25px;
+}
+
+/***
+Product overview
+***/
+/* line 320, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* line 326, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list-item {
+  display: flex;
+  padding: 0.5em;
+  width: 100%;
+}
+
+/* line 332, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list-content img {
+  align-self: center;
+}
+
+/* line 336, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1em;
+  width: 100%;
+}
+
+/* line 344, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list-content strong {
+  margin-top: auto;
+  color: #182628;
+}
+
+/* line 349, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list-content strong:hover {
+  color: #182628;
+}
+
+/* line 353, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list-content p:hover {
+  color: #182628;
+}
+
+/* line 357, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.list-content h2 {
+  margin-top: 25px;
+}
+
+/* line 361, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.product_link {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* line 366, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.product_link a {
+  color: #3b945e;
+}
+
+/* line 370, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.product_link a:hover {
+  color: #57ba98;
+}
+
+/***
+Product details
+***/
+/* line 378, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.product_detail {
+  margin-bottom: 25px;
+}
+
+/* line 382, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.product_detail_imagebox {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 390, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+#product_description {
+  height: 150px;
+}
+
+/* line 394, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.login_to_buy {
+  margin-top: 15px;
+}
+
+/***
+Comments
+***/
+/* line 402, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.rating, .rated {
+  margin-bottom: 10px;
+}
+
+/* line 406, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.comment {
+  margin-top: 25px;
+}
+
+/* line 410, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.comment-control {
+  resize: none;
+}
+
+/* line 414, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.pagination {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: white;
+  cursor: default;
+}
+
+/* line 420, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.pagination a, .pagination span, .pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 3px;
+}
+
+/* line 426, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.pagination .disabled {
+  color: #999999;
+  border: 1px solid #dddddd;
+}
+
+/* line 430, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.pagination .current {
+  font-style: normal;
+  background: #3b945e;
+  color: white;
+  border: 1px solid #3b945e;
+}
+
+/* line 436, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.pagination a {
+  text-decoration: none;
+  color: #3b945e;
+  border: 1px solid #3b945e;
+}
+
+/* line 441, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.pagination a:hover, .pagination a:focus {
+  color: #57ba98;
+  border-color: #57ba98;
+}
+
+/***
+Forms
+***/
+/* line 449, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+label {
+  font-weight: normal;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 454, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.form-control {
+  border-radius: 0;
+}
+
+/* line 458, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.alert {
+  margin: 0px;
+}
+
+/* line 462, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.alert-success {
+  background-color: #3b945e;
+  color: white;
+  border-radius: 0px;
+  border: none;
+}
+
+/* line 469, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.alert-warning {
+  background-color: #af2141;
+  border-radius: 0px;
+  color: white;
+  border: none;
+}
+
+/* line 476, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.login-form,
+.contact-form {
+  width: 340px;
+  margin: 50px auto;
+}
+
+/* line 482, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.remember_me {
+  font-weight: normal;
+}
+
+/* line 486, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+#error_explanation {
+  border: none;
+  background-color: #af2141;
+  padding: 20px;
+  width: auto;
+}
+
+/* line 493, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 505, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+#error_explanation ul li {
+  font-size: 0.9em;
+  list-style: none;
+  color: white;
+}
+
+/* line 511, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.field_with_errors {
+  background-color: transparent;
+}
+
+/* line 515, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.field_with_errors label {
+  color: #af2141;
+}
+
+/* line 519, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.field_with_errors .form-control {
+  border-color: #af2141;
+  border-width: 2px;
+  width: 100%;
+}
+
+/* line 525, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.success {
+  background-color: #3b945e;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  padding: 10px;
+}
+
+/* line 533, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+.alert-info {
+  background-color: #57ba98;
+  color: white;
+  border-radius: 0px;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/***
+Media queries
+***/
+@media (min-width: 992px) {
+  /* line 547, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  h2 {
+    margin-top: 0px;
+  }
+
+  /* line 551, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  .projectName a {
+    font-size: 1.2em;
+  }
+
+  /* line 555, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  .navbar-inverse .navbar-nav > li > a {
+    font-size: 1.2em;
+  }
+
+  /* line 559, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  .navbar .login {
+    font-size: 0.9em;
+  }
+
+  /* line 563, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  .carousel-inner > .item > img {
+    max-height: 500px;
+  }
+}
+@media (min-width: 767px) {
+  /* line 569, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  .carousel-inner > .item > img {
+    max-height: 400px;
+  }
+}
+@media all and (min-width: 40em) {
+  /* line 581, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  .list-item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 60em) {
+  /* line 587, /Users/katrinfritz/Documents/02_Arbeit & Weiterbildung/05_Web Development Course/05_OnlineShop/app/assets/stylesheets/simple_pages.scss */
+  .list-item {
+    width: 33.33%;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
