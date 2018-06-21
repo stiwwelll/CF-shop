@@ -3,102 +3,14 @@
   <head>
     <title>Bike Berlin</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik|Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <script>
-      window.addEventListener("load", function(){
-
-        function createCookie(name, value, days) {
-          if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-              var expires = "; expires=" + date.toGMTString();
-            }
-            else var expires = "";
-
-            document.cookie = name + "=" + value + expires + "; path=/";
-        }
-
-        function readCookie(name) {
-          var nameEQ = name + "=";
-          var ca = document.cookie.split(';');
-          for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-          }
-          return null;
-        }
-
-        function eraseCookie(name) {
-          createCookie(name, "", -1);
-        }
-
-        window.cookieconsent.initialise({
-          "palette": {
-            "popup": {
-              "background": "#118cff",
-              "text": "#ffffff",
-
-            },
-            "button": {
-              "background": "#ffffff",
-              "text": "#118cff"
-            }
-          },
-          "type": "opt-in",
-          "content": {
-            "message": "Wir verwenden Cookies, um Ihnen mehr Benutzerfreundlichkeit bieten zu können. Wenn Sie Zustimmen, akzeptieren Sie unsere Datenschutzerklärung.",
-            "allow": "Zustimmen",
-            "dismiss": "ABLEHNEN",
-            "link": "Mehr Informationen",
-            "href": "https://www.netzwerk-chancen.de/datenschutz",
-          },
-          onInitialise: function (status) {
-            var didConsent = this.hasConsented();
-            if (status == 'dismiss' || !didConsent) {
-
-              console.log('test');
-
-              /* CF-Shop Cookie */
-              eraseCookie('_nameofapp_session');
-
-              /* Netzwerk Chancen Cookies
-              eraseCookie('XSRF-TOKEN');
-              eraseCookie('hs');
-              eraseCookie('svSession');
-              eraseCookie('incap_ses_${Proxy-ID}_${Site-ID}	');
-              eraseCookie('incap_visid_${Proxy-ID}_${Site-ID}	');
-              eraseCookie('nlbi_{ID}	');
-              eraseCookie('smSession');
-              eraseCookie('TS015217d5');
-              eraseCookie('TS01ffac9c');
-              eraseCookie('__utma');
-              eraseCookie('__utmc');
-              eraseCookie('__utmz');
-              eraseCookie('_ga');
-              eraseCookie('_wixCIDX');
-              eraseCookie('_wixUIDX');
-              eraseCookie('_wix_broser_sess');
-              */
-            }
-            else {
-
-            }
-          },
-        })
-      });
-    </script>
-
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
   <body>
