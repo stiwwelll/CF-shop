@@ -43,7 +43,17 @@ describe Product do
   end
 
   context "when user searches" do
-    #tbd
+
+    before do
+      @product = FactoryBot.create(:product)
+    end
+
+    it "finds a product by name" do
+      if Rails.env.production?
+        @result = Product.search(search: "produc")
+        expect(@result).to eq(@product)
+      end
+    end
   end
 
 end
