@@ -14,6 +14,7 @@ describe ProductsController, type: :controller do
     context 'when a user opens index page' do
       it "renders index template" do
 	       get :index
+         expect(response.status).to eq(200)
          expect(response).to render_template(:index)
 	    end
     end
@@ -25,6 +26,7 @@ describe ProductsController, type: :controller do
     context 'when a user opens show page of a product' do
       it 'renders show template' do
         get :show, params: { id: @product.id }
+        expect(response.status).to eq(200)
         expect(response).to render_template(:show)
       end
     end
