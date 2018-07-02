@@ -10,12 +10,14 @@
   <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <% @products.each do |product| %>
-        <div class="item<%= " active" if product == @products.first %>">
-          <%= render partial: "products/productimage", locals: {product: product} %>
-          <div class="carousel-caption">
-            <h2><%= product.name %></h2>
+        <%= link_to(product) do %>
+          <div class="item<%= " active" if product == @products.first %>">
+              <%= render partial: "products/productimage", locals: {product: product} %>
+              <div class="carousel-caption">
+                  <h2><%= product.name %></h2>
+                <% end %>
+              </div>
           </div>
-        </div>
       <% end %>
     </div>
   <% end %>

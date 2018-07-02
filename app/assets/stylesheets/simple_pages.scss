@@ -261,7 +261,7 @@ Homepage
   background-color: white;
 }
 
-.carousel-inner > .item > img {
+.carousel-inner > .item > a > img {
 margin:auto;
 padding: 25px;
 max-height: 250px;
@@ -559,13 +559,13 @@ Media queries
    font-size: 0.9em;
  }
 
- .carousel-inner > .item > img {
+ .carousel-inner > .item > a > img {
  max-height: 500px;
  }
 }
 
 @media (min-width: 767px) {
-  .carousel-inner > .item > img {
+  .carousel-inner > .item > a > img {
   max-height: 400px;
   }
 }
