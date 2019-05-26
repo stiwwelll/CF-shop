@@ -10,17 +10,17 @@ end
 
 gem 'rails', '~> 5.1.5'
 gem 'puma', '~> 3.7'
+gem 'jbuilder', '~> 2.5'
+gem 'turbolinks', '~> 5'
+
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-
 gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
-
+gem 'jquery-rails'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'jquery-rails'
 
 group :development, :test do
 
