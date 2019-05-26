@@ -1,3 +1,3 @@
 # README
 
-I'm Katrin and this is gonna be my first Rails project
+This is a demo app for my Ruby Unconf 2019 workshop on Webpacker. Thanks @katrinundfritz
